@@ -1,65 +1,165 @@
 {
   "profile": "I am a Physics PhD candidate at the University of Massachusetts Amherst, working with Stefan Krastanov in the Center for Quantum Networks (NSF ERC). My research combines stabilizer and Clifford methods, graph theory, simulation, and combinatorial optimization to design quantum-state preparation and entanglement distillation protocols under noise and finite-resource constraints.",
   "education": [
-    {"period": "2021–present", "title": "PhD in Physics, in progress", "institution": "University of Massachusetts Amherst", "details": "Advisor: Prof. Stefan Krastanov. Research in graph-state entanglement distillation, quantum networks, and quantum error correction."},
-    {"period": "2016–2019", "title": "BS in Physics and BS in Mathematics", "institution": "Case Western Reserve University", "details": "Undergraduate research advisor: Prof. Xuan Gao."}
+    {
+      "period": "2021–present",
+      "title": "PhD in Physics, in progress",
+      "institution": "University of Massachusetts Amherst",
+      "details": "Advisor: Prof. Stefan Krastanov. Research in graph-state entanglement distillation, quantum networks, and quantum error correction."
+    },
+    {
+      "period": "2016–2019",
+      "title": "BS in Physics and BS in Mathematics",
+      "institution": "Case Western Reserve University",
+      "details": "Undergraduate research advisor: Prof. Xuan Gao."
+    }
   ],
-  "currentRole": {"period": "2023–present", "title": "Graduate Researcher", "institution": "Krastanov Lab, University of Massachusetts Amherst", "details": "Center for Quantum Networks (NSF Engineering Research Center). Advisor: Prof. Stefan Krastanov."},
+  "currentRole": {
+    "period": "2023–present",
+    "title": "Graduate Researcher",
+    "institution": "Krastanov Lab, University of Massachusetts Amherst",
+    "details": "Center for Quantum Networks (NSF Engineering Research Center). Advisor: Prof. Stefan Krastanov."
+  },
   "projects": [
     {
       "title": "Shaping error distributions in resource-constrained graph-state synthesis",
       "status": "Ongoing research",
       "url": "/research/graph-state-synthesis/",
-      "points": ["Studying which correlated error distributions are reachable when a target graph state is assembled from a constrained library of noisy resource states and fusion operations.", "Developing task-aware synthesis methods that choose decompositions and fusion plans according to the needs of downstream quantum-network and error-correction protocols."]
+      "points": [
+        "Studying which correlated error distributions are reachable when a target graph state is assembled from a constrained library of noisy resource states and fusion operations.",
+        "Developing task-aware synthesis methods that choose decompositions and fusion plans according to the needs of downstream quantum-network and error-correction protocols."
+      ]
     },
     {
       "title": "Sequence control for partial distillation of graph states",
       "status": "Manuscript in preparation",
       "url": "/research/sequence-control/",
-      "points": ["Formulated partial-distillation sequence selection as a combinatorial optimization problem governed by correlated noise propagation, structural equivalences, and predecessor-set costs with higher-order ordering effects.", "Developed PairMoment, a reduced model with an O(n²) state representation that tracks single-vertex error probabilities and pair correlations for sequence optimization."]
+      "points": [
+        "Formulated partial-distillation sequence selection as a combinatorial optimization problem governed by correlated noise propagation, structural equivalences, and predecessor-set costs with higher-order ordering effects.",
+        "Developed PairMoment, a reduced model with an O(n²) state representation that tracks single-vertex error probabilities and pair correlations for sequence optimization."
+      ]
     },
     {
       "title": "Graph-state purification across local Clifford orbits",
       "status": "Preprint · submitted to npj Quantum Information",
       "url": "/publications/graph-state-purification/",
-      "points": ["Characterized factorized graph-preserving Clifford operations using bipartiteness and leaf structure.", "Used minimum-edge representatives to organize gate families and transfer purification circuits between locally Clifford-equivalent graph states."]
+      "points": [
+        "Characterized factorized graph-preserving Clifford operations using bipartiteness and leaf structure.",
+        "Used minimum-edge representatives to organize gate families and transfer purification circuits between locally Clifford-equivalent graph states."
+      ]
     },
     {
       "title": "GHZ-preserving gates and distillation circuits",
       "status": "Preprint · submitted to Quantum",
       "url": "/publications/ghz-preserving-gates/",
-      "points": ["Derived an affine binary representation of GHZ-basis labels and the action of preserving gates, enabling O(1) online label updates.", "Implemented GHZPreserving.jl for noisy-circuit search and finite-resource distillation optimization."]
+      "points": [
+        "Derived an affine binary representation of GHZ-basis labels and the action of preserving gates, enabling O(1) online label updates.",
+        "Implemented GHZPreserving.jl for noisy-circuit search and finite-resource distillation optimization."
+      ]
     },
     {
       "title": "Gaussian quantum-optics simulation tools",
       "url": "https://github.com/qojulia/QuantumOptics.jl",
       "status": "Scientific software development",
-      "points": ["Implemented a Julia API for Gaussian quantum-optics simulation, including beam splitters, squeezing, loss channels, and covariance-matrix transformations."]
+      "points": [
+        "Implemented a Julia API for Gaussian quantum-optics simulation, including beam splitters, squeezing, loss channels, and covariance-matrix transformations."
+      ]
     }
   ],
   "manuscripts": [
-    {"title": "Sequence Control for Partial Distillation of Graph States with Pair-Moment Propagation", "authors": ["Mingyuan Wang", "Stefan Krastanov"], "status": "Manuscript in preparation", "url": "/research/sequence-control/"}
+    {
+      "title": "Sequence Control for Partial Distillation of Graph States with Pair-Moment Propagation",
+      "authors": [
+        "Mingyuan Wang",
+        "Stefan Krastanov"
+      ],
+      "status": "Manuscript in preparation",
+      "url": "/research/sequence-control/",
+      "abstract": "The order of noisy checks in partial graph-state distillation determines how effectively they suppress errors, even when the target, auxiliaries and hardware are fixed. Exploiting this control freedom is computationally difficult: explicit state propagation is exponential, and the space of complete check orders is factorial. We make sequence selection tractable as an approximate optimization problem by combining an exact characterization of ordering structure with a reduced model of conditional dynamics. The structural analysis identifies equivalent orders and explains how local faults couple several precedence relations. The reduced model, PairMoment, replaces the exponentially large target distribution with a quadratic number of single-label and pair moments. Coupling this compact conditional evolution to bounded search avoids exhaustive enumeration while preserving information needed to compare noisy sequences. Exact-reference benchmarks show shortlists containing near-optimal orders on the tested systems, and information-order comparisons show that better state prediction need not give better selection. The resulting approach makes sequence control computationally accessible within partial graph-state distillation."
+    }
   ],
   "earlierRoles": [
-    {"period": "2021–2023", "title": "Graduate Researcher", "institution": "Jun Yan Lab, University of Massachusetts Amherst", "details": "Twisted-bilayer graphene: Raman spectroscopy, cryogenic transport, magnetic fields, and pressure tuning."},
-    {"period": "2020", "title": "R&D Intern", "institution": "Fuxi Technology", "details": "Graphene thermal materials."},
-    {"period": "2017–2019", "title": "Undergraduate Researcher", "institution": "Xuan Gao Lab, Case Western Reserve University", "details": "Van der Waals heterostructures."},
-    {"period": "2017–2018", "title": "Undergraduate Researcher", "institution": "Benjamin Monreal Lab, Case Western Reserve University", "details": "Wide-aperture telescope design."}
+    {
+      "period": "2021–2023",
+      "title": "Graduate Researcher",
+      "institution": "Jun Yan Lab, University of Massachusetts Amherst",
+      "details": "Twisted-bilayer graphene: Raman spectroscopy, cryogenic transport, magnetic fields, and pressure tuning."
+    },
+    {
+      "period": "2020",
+      "title": "R&D Intern",
+      "institution": "Fuxi Technology",
+      "details": "Graphene thermal materials."
+    },
+    {
+      "period": "2017–2019",
+      "title": "Undergraduate Researcher",
+      "institution": "Xuan Gao Lab, Case Western Reserve University",
+      "details": "Van der Waals heterostructures."
+    },
+    {
+      "period": "2017–2018",
+      "title": "Undergraduate Researcher",
+      "institution": "Benjamin Monreal Lab, Case Western Reserve University",
+      "details": "Wide-aperture telescope design."
+    }
   ],
   "talks": [
-    {"date": "February 2026", "title": "Efficient Graph State Purification with Factorized Graph-Preserving Operations across Local Clifford Orbits", "event": "Center for Quantum Networks Annual All-Center Retreat", "location": "Amherst, MA"},
-    {"date": "June 2, 2025", "title": "From GHZ to Graph states: A Group-Based Approach to Entanglement Preservation", "event": "Quantum Networking Workshop: Modeling, Applications, Design", "location": "UMass Amherst", "url": "https://www.umass.edu/quantum/2025-quantumsavory-workshop/"},
-    {"date": "March 18, 2025", "title": "GHZ-preserving Gates and Optimized Purification Circuits", "event": "APS Global Physics Summit / March Meeting", "location": "Anaheim, CA", "url": "https://meetings-archive.aps.org/smt/2025/mar-g33/8/"},
-    {"date": "2025", "title": "GHZ-Preserving Gates and Optimized Distillation Circuits", "event": "Center for Quantum Networks Site Visit", "location": "Tucson, AZ"}
+    {
+      "date": "February 2026",
+      "title": "Efficient Graph State Purification with Factorized Graph-Preserving Operations across Local Clifford Orbits",
+      "event": "Center for Quantum Networks Annual All-Center Retreat",
+      "location": "Amherst, MA"
+    },
+    {
+      "date": "June 2, 2025",
+      "title": "From GHZ to Graph states: A Group-Based Approach to Entanglement Preservation",
+      "event": "Quantum Networking Workshop: Modeling, Applications, Design",
+      "location": "UMass Amherst",
+      "url": "https://www.umass.edu/quantum/2025-quantumsavory-workshop/"
+    },
+    {
+      "date": "March 18, 2025",
+      "title": "GHZ-preserving Gates and Optimized Purification Circuits",
+      "event": "APS Global Physics Summit / March Meeting",
+      "location": "Anaheim, CA",
+      "url": "https://meetings-archive.aps.org/smt/2025/mar-g33/8/"
+    },
+    {
+      "date": "2025",
+      "title": "GHZ-Preserving Gates and Optimized Distillation Circuits",
+      "event": "Center for Quantum Networks Site Visit",
+      "location": "Tucson, AZ"
+    }
   ],
   "expertise": [
-    {"title": "Quantum information", "details": "Stabilizer formalism; Clifford circuits; graph and GHZ states; entanglement distillation and purification; quantum error correction; noisy-circuit simulation; logical-error estimation."},
-    {"title": "Scientific computing", "details": "Julia, Python, MATLAB; Monte Carlo methods; combinatorial and numerical optimization; graph algorithms; Linux and high-performance computing with Slurm; scientific software development."},
-    {"title": "Experimental methods", "details": "2D-material fabrication and nanofabrication; Raman spectroscopy; cryogenic transport; magnetic-field and pressure-dependent measurements."}
+    {
+      "title": "Quantum information",
+      "details": "Stabilizer formalism; Clifford circuits; graph and GHZ states; entanglement distillation and purification; quantum error correction; noisy-circuit simulation; logical-error estimation."
+    },
+    {
+      "title": "Scientific computing",
+      "details": "Julia, Python, MATLAB; Monte Carlo methods; combinatorial and numerical optimization; graph algorithms; Linux and high-performance computing with Slurm; scientific software development."
+    },
+    {
+      "title": "Experimental methods",
+      "details": "2D-material fabrication and nanofabrication; Raman spectroscopy; cryogenic transport; magnetic-field and pressure-dependent measurements."
+    }
   ],
-  "service": {"title": "Engineering Workforce Development Liaison", "organization": "Student and Postdoc Leadership Council, NSF Center for Quantum Networks"},
+  "service": {
+    "title": "Engineering Workforce Development Liaison",
+    "organization": "Student and Postdoc Leadership Council, NSF Center for Quantum Networks"
+  },
   "teaching": [
-    {"period": "2021–2024", "title": "Teaching Assistant", "institution": "Department of Physics, University of Massachusetts Amherst"},
-    {"period": "2017", "title": "Teaching Assistant", "institution": "Case Western Reserve University"}
+    {
+      "period": "2021–2024",
+      "title": "Teaching Assistant",
+      "institution": "Department of Physics, University of Massachusetts Amherst"
+    },
+    {
+      "period": "2017",
+      "title": "Teaching Assistant",
+      "institution": "Case Western Reserve University"
+    }
   ]
 }

@@ -52,7 +52,7 @@ export function renderCv(academic, papers, { esc, authors, paperStatus, publicat
       <section class="contact" id="contact"><h2>Get in touch</h2>
         <p><a href="mailto:${config.email}">${config.email}</a></p>
         <p>Department of Physics<br>University of Massachusetts Amherst<br>Amherst, Massachusetts, USA</p>
-        <p><a href="${config.lab}">Krastanov Lab</a> · <a href="${config.github}">GitHub</a></p>
+        <p><a href="${config.lab}">Krastanov Lab</a> · <a href="${config.github}">GitHub</a> · <a href="${esc(config.scholar)}">Google Scholar</a> · <a href="${config.orcid}">ORCID</a></p>
       </section>
     </div>
   </div>`;

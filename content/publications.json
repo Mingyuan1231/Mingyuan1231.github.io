@@ -2,7 +2,12 @@
   {
     "slug": "graph-state-purification",
     "title": "Efficient Graph State Purification with Factorized Graph-Preserving Operations across Local Clifford Orbits",
-    "authors": ["Mingyuan Wang", "Guus Avis", "Kenneth Goodenough", "Stefan Krastanov"],
+    "authors": [
+      "Mingyuan Wang",
+      "Guus Avis",
+      "Kenneth Goodenough",
+      "Stefan Krastanov"
+    ],
     "date": "2026-06-22",
     "status": "Preprint",
     "submittedTo": "npj Quantum Information",
@@ -14,16 +19,22 @@
     "summary": "A framework for designing multipartite entanglement purification circuits using graph-preserving Clifford operations and local-complementation orbits.",
     "overview": "This work represents a restricted family of Clifford operations as permutations of graph-basis labels. Factoring these operations and organizing them by local-complementation orbits makes it possible to search for purification circuits across related graph states. Numerical studies evaluate finite-size circuits with gate and measurement noise.",
     "scope": "The reported advantages concern the graph-state families, noise models, and finite-size circuits studied in the preprint. They do not establish that every graph state or every hardware setting benefits equally.",
-    "abstract": null,
+    "abstract": "Graph states form a broad class of multipartite entangled states underlying measurement-based quantum computation, quantum networks, and stabilizer codes. However, systematic entanglement distillation for arbitrary graph states remains challenging because the circuit design space grows rapidly with the number of parties. We introduce a group of Clifford operations that we call \"factorized graph-preserving\". It enables us to efficiently enumerate and optimize graph-state purification circuits at finite size for realistic noisy hardware. These operations map products of graph-basis states to products of graph-basis states, so their action can be represented as permutations of graph-basis labels. Moreover, this useful gate set admits a compact factorized description determined by simple graph-theoretic features. This structure also allows, after some initial cached precomputation, drastically lower computational complexity for simulating a gate. We further organize these operations over local-complementation (LC) orbits using minimum-edge representatives (MERs), which let us design purification circuits that apply to all locally equivalent graph states (up to a basis change). Using this framework, we optimize noisy finite-size multipartite distillation circuits for several graph-state families. Numerical results show that the resulting graph-preserving circuits can outperform standard recurrence-based purification protocols under realistic gate and measurement noise. Our results establish LC-orbit structure and factorized graph-preserving operations as practical tools for scalable, topology-aware and hardware-constrained graph-state distillation protocol design. Our work can also be interpreted as a graph-based heuristic for finding transversal gates.",
     "contributions": [
       "Characterized factorized graph-preserving Clifford operations through bipartiteness and leaf structure, obtaining compact homogeneous and bilocal gate families for graph-basis simulation.",
       "Organized gate families across local-complementation orbits using minimum-edge representatives, allowing purification circuits to be transferred between locally Clifford-equivalent graph states."
-    ]
+    ],
+    "abstractSource": "https://arxiv.org/abs/2606.23809",
+    "abstractSourceLabel": "author preprint on arXiv"
   },
   {
     "slug": "ghz-preserving-gates",
     "title": "GHZ-Preserving Gates and Optimized Distillation Circuits",
-    "authors": ["Mingyuan Wang", "Guus Avis", "Stefan Krastanov"],
+    "authors": [
+      "Mingyuan Wang",
+      "Guus Avis",
+      "Stefan Krastanov"
+    ],
     "date": "2025-10-29",
     "status": "Preprint",
     "submittedTo": "Quantum",
@@ -46,7 +57,13 @@
   {
     "slug": "inse-gase-heterostructures",
     "title": "Interfacial Charge Transfer and Gate-Induced Hysteresis in Monochalcogenide InSe/GaSe Heterostructures",
-    "authors": ["Arvind Shankar Kumar", "Mingyuan Wang", "Yancheng Li", "Ryuji Fujita", "Xuan P. A. Gao"],
+    "authors": [
+      "Arvind Shankar Kumar",
+      "Mingyuan Wang",
+      "Yancheng Li",
+      "Ryuji Fujita",
+      "Xuan P. A. Gao"
+    ],
     "date": "2020-09-21",
     "status": "Published",
     "journal": "ACS Applied Materials & Interfaces",
@@ -60,14 +77,22 @@
     "summary": "An experimental study of charge transfer and gate-dependent transport in stacked InSe/GaSe semiconductor layers.",
     "overview": "The study examines mechanically assembled InSe/GaSe heterostructures. Transport measurements reveal hysteresis and a time-dependent conductance response to applied gate voltage, interpreted in terms of charge transfer between the two layers.",
     "scope": "The observations concern the fabricated InSe/GaSe devices and their measurement conditions. The journal article provides the device preparation, transport measurements, and interpretation.",
-    "abstract": null,
+    "abstract": "Heterostructures of 2D van der Waals semiconductor materials offer a diverse playground for exploring fundamental physics and potential device applications. In InSe/GaSe heterostructures formed by sequential mechanical exfoliation and stacking of 2D monochalcogenides InSe and GaSe, we observe charge transfer between InSe and GaSe due to the 2D van der Waals interface formation and a strong hysteresis effect in the electron transport through the InSe layer when a gate voltage is applied through the GaSe layer. A gate voltage dependant conductance decay rate is also observed. We relate these observations to the gate voltage dependant dynamical charge transfer between InSe and GaSe layers.",
     "related": "/cv/#earlier-research",
-    "relatedLabel": "Earlier experimental research at Case Western Reserve University"
+    "relatedLabel": "Earlier experimental research at Case Western Reserve University",
+    "abstractSource": "https://arxiv.org/abs/2005.13514",
+    "abstractSourceLabel": "author preprint on arXiv"
   },
   {
     "slug": "wide-aperture-exoplanet-telescope",
     "title": "Wide Aperture Exoplanet Telescope: a low-cost flat configuration for a 100+ meter ground based telescope",
-    "authors": ["Benjamin Monreal", "Christian Rodriguez", "Ama Carney", "Robert Halliday", "Mingyuan Wang"],
+    "authors": [
+      "Benjamin Monreal",
+      "Christian Rodriguez",
+      "Ama Carney",
+      "Robert Halliday",
+      "Mingyuan Wang"
+    ],
     "date": "2018-05-26",
     "status": "Published",
     "journal": "Journal of Astronomical Telescopes, Instruments, and Systems",
@@ -81,8 +106,10 @@
     "summary": "A telescope design study using an elongated aperture and a low-rise mount to explore the cost and feasibility of large ground-based instruments.",
     "overview": "The Wide Aperture Exoplanet Telescope concept combines an asymmetric filled aperture with a beam path designed to simplify the supporting structure. The paper develops the configuration and examines the design considerations and scaling that motivate it.",
     "scope": "This is a proposed telescope configuration and design study, not a report of a constructed 100-meter telescope.",
-    "abstract": null,
+    "abstract": "The Wide Aperture Exoplanet Telescope (WAET) is a ground-based optical telescope layout in which one dimension of a filled aperture can be made very, very large (beyond 100 m) at low cost and complexity. With an unusual beam path but an otherwise-conventional optics, we obtain a fully-steerable telescope on a low-rise mount with a fixed gravity vector on key components. Numerous design considerations and scaling laws suggest that WAET can be far less expensive than other giant segmented mirror telescopes.",
     "related": "/cv/#earlier-research",
-    "relatedLabel": "Earlier telescope-design research at Case Western Reserve University"
+    "relatedLabel": "Earlier telescope-design research at Case Western Reserve University",
+    "abstractSource": "https://arxiv.org/abs/1801.00822",
+    "abstractSourceLabel": "author preprint on arXiv"
   }
 ]

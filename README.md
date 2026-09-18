@@ -59,12 +59,12 @@ Do not create a CNAME file until the domain is actually available and configured
 - DOI, arXiv, code, and institution links support attribution and verification.
 - OAI-SearchBot is allowed for search. No special training policy is added; the default
   robots rule allows crawlers, and training access is independent of search access.
-- No analytics or trackers. Search Console verification is not configured yet.
+- No analytics or trackers. Search Console ownership and indexing require verification in the owner's account.
 
 The 2025 paper's author abstract is reproduced under its CC BY 4.0 license, with notation
-reformatted. The 2026 paper page uses a clearly labeled summary and links to the original
-abstract. Obtain author-supplied abstract text for that page before treating its Scholar
-inclusion requirements as complete. `citation_pdf_url` is deliberately omitted because
+reformatted. The other three paper pages reproduce their linked arXiv author-preprint
+abstracts at the author's request. Sequence control uses the abstract from the current
+author-supplied manuscript, retaining its in-preparation status. `citation_pdf_url` is deliberately omitted because
 full texts currently link to external arXiv files rather than a local paper directory.
 
 The publication list contains the four public papers identified in the supplied CV, plus a
@@ -79,7 +79,9 @@ O(n²) claim is the size of its state representation, not the runtime of the who
 Original application PDFs and extracted source files are not part of the site or repository.
 The workshop date was reconciled with the owner as June 2, 2025, following the official
 UMass schedule rather than the 2024 date in the supplied CV.
-ORCID, Scholar profile, awards and any further papers remain to be supplied or verified.
+The owner supplied ORCID 0000-0002-1010-2807 and Scholar profile j_yVltwAAAAJ.
+Person.sameAs includes their public URLs and GitHub; lab and CQN relationships use memberOf.
+Awards and further papers should only be added with verified information.
 
 An empty `url` in config produces a local-only build with `noindex` and crawl blocking;
 CI refuses to publish without a configured URL. `SITE_URL` can override the config for
