@@ -3,7 +3,7 @@
 
   <h2>What role do GHZ-preserving gates play?</h2>
   <p>For GHZ states, I characterized local Clifford operations that preserve the GHZ basis and developed an affine binary description of their action on basis labels. A preserving gate can then update a compact label directly, avoiding repeated updates to a full stabilizer description.</p>
-  <p>This representation enables O(1) online label updates and supports noisy-circuit search and finite-resource distillation optimization. The cost statement applies to the specialized update, not to arbitrary quantum circuits or the entire optimization procedure. The details are in <a href="/publications/ghz-preserving-gates/">GHZ-Preserving Gates and Optimized Distillation Circuits</a>.</p>
+  <p>In this representation, each online label update takes O(1) time, supporting noisy-circuit search and finite-resource distillation optimization. The details are in <a href="/publications/ghz-preserving-gates/">GHZ-Preserving Gates and Optimized Distillation Circuits</a>.</p>
 
   <h2>How does graph topology enter the problem?</h2>
   <p>General graph states need not have the same symmetry as GHZ states. In the graph-state work, I characterized factorized graph-preserving Clifford operations using structural features such as bipartiteness and leaf configurations. These constraints yield compact homogeneous and bilocal gate families for graph-basis simulation.</p>
@@ -11,9 +11,6 @@
   <h2>Why organize operations across local Clifford orbits?</h2>
   <p>Locally Clifford-equivalent graph states belong to the same entanglement class, but their graph representations can expose different operational structure. Using minimum-edge representatives, I organized the preserving gate families across local-complementation orbits so that purification circuits can be transferred between equivalent states.</p>
   <p>The <a href="/publications/graph-state-purification/">graph-state purification preprint</a> describes this framework and its numerical evaluation under gate and measurement noise.</p>
-
-  <h2>What should I check before applying the results?</h2>
-  <p>The state family, allowed operations, finite resources, and noise assumptions determine the applicable setting. The preprints specify the representations and circuit constraints used in the comparisons. Their numerical results do not establish a uniform advantage for every graph state or hardware model.</p>
 
   <h2>Where can I find the implementations?</h2>
   <ul>

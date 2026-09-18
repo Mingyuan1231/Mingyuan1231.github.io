@@ -20,18 +20,23 @@ If Node.js is available but npm is not on PATH, the equivalent commands are
 
 ## Editing content
 
-- `site.config.json`: URL, public identity, contact links, and actual content review date.
+Public pages speak in the author’s voice. Keep editorial provenance, verification notes,
+permission statements, and content-review logs in repository documentation, not on the site.
+Describe technical scope directly within the research explanation rather than adding generic disclaimers.
+The former `/credits/` page and its footer link have been removed.
+
+- `site.config.json`: URL, public identity, contact links, and content modification date for the sitemap.
 - `content/publications.json`: paper metadata, summaries, abstracts, code links and publication status.
 - `content/academic.json`: research appointments, projects, education, manuscripts, talks, expertise, service and teaching.
 - `content/*.html`: research overview and topic pages, written from the author's research statement.
 - `scripts/academic-pages.mjs`: academic CV layout and section navigation.
 - `scripts/build.mjs`: shared page layouts, homepage, citation metadata and publication pages.
 - `public/assets/style.css`: responsive design.
-- `public/assets/mingyuan-wang.jpg`: existing lab portrait; attribution is on `/credits/`.
+- `public/assets/mingyuan-wang.jpg`: personal portrait.
 - `PROJECT_BRIEF.md`: project goals and content standards (not part of the deployed website).
 
 Only `dist/` is published. Do not edit generated files. Run the build and checks after changes.
-Update the review date only when reviewing or changing substantive content, not on each rebuild.
+Update the modification date only when reviewing or changing substantive content, not on each rebuild.
 
 ## GitHub Pages
 
