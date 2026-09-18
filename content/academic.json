@@ -1,5 +1,5 @@
 {
-  "profile": "I am a Physics PhD candidate at the University of Massachusetts Amherst, working with Stefan Krastanov in the Center for Quantum Networks. My research combines stabilizer and Clifford methods, graph theory, simulation, and combinatorial optimization to design quantum-state preparation and entanglement distillation protocols under noise and finite-resource constraints.",
+  "profile": "I am a Physics PhD candidate at the University of Massachusetts Amherst, working with Stefan Krastanov in the Center for Quantum Networks (NSF ERC). My research combines stabilizer and Clifford methods, graph theory, simulation, and combinatorial optimization to design quantum-state preparation and entanglement distillation protocols under noise and finite-resource constraints.",
   "education": [
     {"period": "2021–present", "title": "PhD in Physics, in progress", "institution": "University of Massachusetts Amherst", "details": "Advisor: Prof. Stefan Krastanov. Research in graph-state entanglement distillation, quantum networks, and quantum error correction."},
     {"period": "2016–2019", "title": "BS in Physics and BS in Mathematics", "institution": "Case Western Reserve University", "details": "Undergraduate research advisor: Prof. Xuan Gao."}
