@@ -33,6 +33,7 @@ function frame(route, title, description, body, extra = '', schema) {
   return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title><meta name="description" content="${esc(description)}">
+${route === '/' && config.googleSiteVerification ? `<meta name="google-site-verification" content="${esc(config.googleSiteVerification)}">` : ''}
 <meta name="author" content="Mingyuan Wang"><meta name="theme-color" content="#17232c">
 ${origin && route !== '/404.html' ? `<link rel="canonical" href="${esc(absolute(route))}"><meta property="og:url" content="${esc(absolute(route))}">` : '<meta name="robots" content="noindex">'}
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}">
