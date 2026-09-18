@@ -8,6 +8,8 @@
 /* Longer academic content keeps the existing type and color system. */
 .selected-papers .paper { padding: 25px 0; }
 .selected-paper-status { color: var(--muted); font-size: .82rem; margin: 0; }
+.about-introduction .intro { font-size: 1.08rem; line-height: 1.75; }
+.about-introduction p { margin-bottom: 20px; }
 .project-status {
   color: var(--accent);
   font-size: .82rem;
