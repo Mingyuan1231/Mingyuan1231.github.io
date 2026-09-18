@@ -72,7 +72,6 @@ function bib(p) {
   return `@${p.journal ? 'article' : 'misc'}{wang${p.date.slice(0,4)}${p.slug.replaceAll('-','')},\n  title = {{${p.title}}},\n  author = {${p.authors.join(' and ')}},\n  year = {${p.date.slice(0,4)}},\n${journalFields}  eprint = {${p.arxiv}},\n  archivePrefix = {arXiv},\n  primaryClass = {${p.primaryClass || 'quant-ph'}},\n  doi = {${p.doi}},\n  url = {https://doi.org/${p.doi}}\n}\n`;
 }
 
-// Remove only this script's fixed build directory, after verifying its location.
 if (path.dirname(out) !== path.resolve(root) || path.basename(out) !== 'dist') throw new Error('Unsafe build directory.');
 await rm(out,{recursive:true,force:true});
 await mkdir(out,{recursive:true});

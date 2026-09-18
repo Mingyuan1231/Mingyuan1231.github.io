@@ -22,9 +22,7 @@
     "contributions": [
       "Characterized factorized graph-preserving Clifford operations through bipartiteness and leaf structure, obtaining compact homogeneous and bilocal gate families for graph-basis simulation.",
       "Organized gate families across local-complementation orbits using minimum-edge representatives, allowing purification circuits to be transferred between locally Clifford-equivalent graph states."
-    ],
-    "abstractSource": "https://arxiv.org/abs/2606.23809",
-    "abstractSourceLabel": "author preprint on arXiv"
+    ]
   },
   {
     "slug": "ghz-preserving-gates",
@@ -76,9 +74,7 @@
     "overview": "The study examines mechanically assembled InSe/GaSe heterostructures. Transport measurements reveal hysteresis and a time-dependent conductance response to applied gate voltage, interpreted in terms of charge transfer between the two layers.",
     "abstract": "Heterostructures of 2D van der Waals semiconductor materials offer a diverse playground for exploring fundamental physics and potential device applications. In InSe/GaSe heterostructures formed by sequential mechanical exfoliation and stacking of 2D monochalcogenides InSe and GaSe, we observe charge transfer between InSe and GaSe due to the 2D van der Waals interface formation and a strong hysteresis effect in the electron transport through the InSe layer when a gate voltage is applied through the GaSe layer. A gate voltage dependant conductance decay rate is also observed. We relate these observations to the gate voltage dependant dynamical charge transfer between InSe and GaSe layers.",
     "related": "/cv/#earlier-research",
-    "relatedLabel": "Earlier experimental research at Case Western Reserve University",
-    "abstractSource": "https://arxiv.org/abs/2005.13514",
-    "abstractSourceLabel": "author preprint on arXiv"
+    "relatedLabel": "Earlier experimental research at Case Western Reserve University"
   },
   {
     "slug": "wide-aperture-exoplanet-telescope",
@@ -104,8 +100,6 @@
     "overview": "The Wide Aperture Exoplanet Telescope concept combines an asymmetric filled aperture with a beam path designed to simplify the supporting structure. The paper develops the configuration and examines the design considerations and scaling that motivate it.",
     "abstract": "The Wide Aperture Exoplanet Telescope (WAET) is a ground-based optical telescope layout in which one dimension of a filled aperture can be made very, very large (beyond 100 m) at low cost and complexity. With an unusual beam path but an otherwise-conventional optics, we obtain a fully-steerable telescope on a low-rise mount with a fixed gravity vector on key components. Numerous design considerations and scaling laws suggest that WAET can be far less expensive than other giant segmented mirror telescopes.",
     "related": "/cv/#earlier-research",
-    "relatedLabel": "Earlier telescope-design research at Case Western Reserve University",
-    "abstractSource": "https://arxiv.org/abs/1801.00822",
-    "abstractSourceLabel": "author preprint on arXiv"
+    "relatedLabel": "Earlier telescope-design research at Case Western Reserve University"
   }
 ]

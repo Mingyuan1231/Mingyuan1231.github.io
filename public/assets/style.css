@@ -5,7 +5,6 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{.site-header,.site-footer,.skip{display:none}.wrap{padding:0;max-width:none}.hero{padding-top:0}.button{background:none;color:var(--ink)}a{color:var(--ink)}.section,.paper{break-inside:avoid}}
 
-/* Longer academic content keeps the existing type and color system. */
 .selected-papers .paper { padding: 25px 0; }
 .selected-paper-status { color: var(--muted); font-size: .82rem; margin: 0; }
 .about-introduction .intro { font-size: 1.08rem; line-height: 1.75; }
