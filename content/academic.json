@@ -32,6 +32,7 @@
     },
     {
       "title": "Gaussian quantum-optics simulation tools",
+      "url": "https://github.com/qojulia/QuantumOptics.jl",
       "status": "Scientific software development",
       "points": ["Implemented a Julia API for Gaussian quantum-optics simulation, including beam splitters, squeezing, loss channels, and covariance-matrix transformations."]
     }
