@@ -1,6 +1,6 @@
 # Mingyuan Wang — academic website
 
-English academic website for Mingyuan Wang, Physics PhD student at UMass Amherst.
+English academic website for Mingyuan Wang, Physics PhD candidate at UMass Amherst.
 Target deployment: https://mingyuan1231.github.io/ (confirmed by the owner).
 
 ## Local development
@@ -22,7 +22,10 @@ If Node.js is available but npm is not on PATH, the equivalent commands are
 
 - `site.config.json`: URL, public identity, contact links, and actual content review date.
 - `content/publications.json`: paper metadata, summaries, abstracts, code links and publication status.
-- `scripts/build.mjs`: page layouts, biography, research overview, education and talks.
+- `content/academic.json`: research appointments, projects, education, manuscripts, talks, expertise, service and teaching.
+- `content/*.html`: research overview and topic pages, written from the author's research statement.
+- `scripts/academic-pages.mjs`: academic CV layout and section navigation.
+- `scripts/build.mjs`: shared page layouts, homepage, citation metadata and publication pages.
 - `public/assets/style.css`: responsive design.
 - `public/assets/mingyuan-wang.jpg`: existing lab portrait; attribution is on `/credits/`.
 - `PROJECT_BRIEF.md`: project goals and content standards (not part of the deployed website).
@@ -64,10 +67,19 @@ abstract. Obtain author-supplied abstract text for that page before treating its
 inclusion requirements as complete. `citation_pdf_url` is deliberately omitted because
 full texts currently link to external arXiv files rather than a local paper directory.
 
-The selected publication list is not a claim of a complete publication record. Add earlier
-papers, ORCID, Scholar profile, awards, or service only after verifying attribution.
-The research overview is a draft synthesis grounded in the linked preprints; review wording
-as the author before expanding technical or quantitative claims.
+The publication list contains the four public papers identified in the supplied CV, plus a
+separate entry for a manuscript in preparation. Journal metadata was checked against
+publisher-deposited Crossref records; author names follow those records for the journal versions.
+Preprints retain arXiv metadata, and submission venues are author-reported, not acceptances.
+Do not give an unpublished manuscript a fabricated DOI, publication date or journal citation.
+
+The CV and research pages draw on the author's supplied CV and four-page research statement.
+They distinguish completed contributions, ongoing research, and future goals. PairMoment's
+O(n²) claim is the size of its state representation, not the runtime of the whole optimizer.
+Original application PDFs and extracted source files are not part of the site or repository.
+The workshop date was reconciled with the owner as June 2, 2025, following the official
+UMass schedule rather than the 2024 date in the supplied CV.
+ORCID, Scholar profile, awards and any further papers remain to be supplied or verified.
 
 An empty `url` in config produces a local-only build with `noindex` and crawl blocking;
 CI refuses to publish without a configured URL. `SITE_URL` can override the config for

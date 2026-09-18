@@ -1,0 +1,21 @@
+<article class="prose">
+  <p class="project-status">Manuscript in preparation · Mingyuan Wang and Stefan Krastanov</p>
+  <p>In partial graph-state distillation, the order of local purification steps can change the final error distribution. My work studies this sequence-selection problem under correlated noise and finite resources.</p>
+
+  <h2>Why does the order of purification steps matter?</h2>
+  <p>A purification step changes errors in its target region, but it also changes correlations elsewhere in the state. These correlations influence the effectiveness of later operations. The cost of a step therefore depends on the history of the sequence, and choosing a good next operation requires information about more than its isolated effect.</p>
+
+  <h2>How can the sequence search be organized?</h2>
+  <p>I formulated sequence selection as a combinatorial optimization problem. The framework identifies structural equivalences among purification sequences and organizes their history-dependent costs through predecessor sets. It also captures higher-order ordering effects that cannot be described by simple pairwise preferences between operations.</p>
+
+  <h2>What does PairMoment track?</h2>
+  <p>PairMoment is a reduced dynamical model that tracks single-vertex error probabilities and pair correlations. Its state representation scales as O(n²), where n is the number of vertices. The objective is to retain correlations relevant to sequence-dependent performance while making repeated evaluation practical for optimization.</p>
+  <p>The O(n²) statement concerns the size of the model's state representation. It does not describe the runtime of the entire sequence search. PairMoment is a reduced model; it does not retain the full graph-basis probability distribution or all higher-order correlations.</p>
+
+  <h2>How does this connect to my earlier work?</h2>
+  <p>The <a href="/research/entanglement-distillation/">GHZ and graph-preserving frameworks</a> exploit symmetry and topology known before a circuit is applied. Sequence control adds a changing structure: the correlations relevant to a later step evolve during purification. The same modeling principle applies, but the reduced representation must track the information produced by earlier operations.</p>
+
+  <h2>Manuscript</h2>
+  <p>Mingyuan Wang and Stefan Krastanov. <em>Sequence Control for Partial Distillation of Graph States with Pair-Moment Propagation.</em> Manuscript in preparation.</p>
+  <p>A public manuscript link is not yet listed. For related available papers and implementations, see <a href="/publications/">publications</a> and <a href="/research/#methods">research software</a>.</p>
+</article>

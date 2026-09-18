@@ -41,5 +41,17 @@ for (const p of papers) {
   assert.ok(html.includes(`content="${p.doi}"`));
   const citation = await readFile(path.join(root,'publications',p.slug,'citation.bib'),'utf8');
   assert.ok(citation.includes(p.authors.join(' and ')));
+  const schema = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
+  assert.equal(schema.creativeWorkStatus,p.status);
+  assert.equal(schema.datePublished,p.date);
+  if (p.journal) {
+    assert.match(citation,/@article\{/);
+    assert.match(html,/name="citation_journal_title"/);
+    assert.equal(schema.isPartOf.isPartOf.isPartOf.name,p.journal);
+    assert.ok(citation.includes(`pages = {${(p.pages || p.articleNumber).replace('–','--')}}`));
+  } else {
+    assert.match(citation,/@misc\{/);
+    assert.doesNotMatch(html,/name="citation_journal_title"/);
+  }
 }
 console.log(`Verified ${files.filter(f=>f.endsWith('.html')).length} pages, ${links} local links/assets, JSON-LD, indexing mode, and citations.`);

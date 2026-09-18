@@ -1,0 +1,29 @@
+<article class="prose">
+  <p class="project-status">Ongoing research</p>
+  <p>I study how graph-state construction determines the errors that later quantum protocols encounter. The target is a fixed graph state assembled from a constrained library of noisy resource states and fusion operations.</p>
+
+  <h2>Why can the same target graph have different error distributions?</h2>
+  <p>Different decompositions and fusion plans may produce the same ideal target graph. Under noise, those construction choices can yield different local error rates, spatial patterns, and correlations. My current work asks which error distributions are reachable for a given resource library and noise model, and how graph topology and resource constraints restrict those possibilities.</p>
+
+  <h2>What makes synthesis task-aware?</h2>
+  <p>A resource should be assessed through the protocol that will use it. Quantum error correction, measurement-based computation, and quantum-network tasks may respond differently to errors with similar total probability but different spatial or correlation structure.</p>
+  <p>I am developing ways to choose decompositions and fusion plans according to downstream cost. The aim is to shape the effective noise seen by the next stage of the architecture, rather than optimizing preparation in isolation.</p>
+
+  <h2>Which constraints matter?</h2>
+  <ul>
+    <li>The primitive noisy resource states available for construction.</li>
+    <li>The allowed fusion operations and their noise models.</li>
+    <li>The target graph's topology and alternative decompositions.</li>
+    <li>The effect of the resulting errors on the intended network or error-correction task.</li>
+  </ul>
+
+  <h2>Where is this work heading?</h2>
+  <p>This is an ongoing project, and the synthesis methods are under development. Future extensions include heterogeneous network links, finite memories, probabilistic entanglement generation, and scheduling. For error correction, I want to study ancillary resources through the effective syndrome and logical-error models they induce.</p>
+  <p>In parallel, I am interested in choosing locally Clifford-equivalent representations to reduce implementation cost. Together, these questions motivate <a href="/research/#future-directions">joint optimization of resources, representations, and circuits</a>.</p>
+
+  <h2>Related work</h2>
+  <ul>
+    <li><a href="/publications/graph-state-purification/">Graph-state purification across local Clifford orbits</a>: structure and equivalence in purification circuit design.</li>
+    <li><a href="/research/sequence-control/">Partial-distillation sequence control</a>: optimization when noise correlations evolve during a protocol.</li>
+  </ul>
+</article>

@@ -1,0 +1,50 @@
+<div class="prose research-prose">
+  <p>I study how algebraic and graph-theoretic structure can make quantum information processing in noisy multipartite systems more efficient. My work focuses on stabilizer and graph states, where Clifford symmetries and graph structure can provide compact descriptions of otherwise large state and circuit spaces.</p>
+  <p>I use these descriptions to optimize state preparation, entanglement distillation, and circuit design under realistic noise and finite-resource constraints. A recurring question is: what information must a model retain to predict the performance of the physical task?</p>
+
+  <div class="topic-list">
+    <article id="representations">
+      <p class="project-status">Preprints · entanglement distillation</p>
+      <h2><a href="/research/entanglement-distillation/">Compact representations for multipartite entanglement</a></h2>
+      <p>For GHZ states, I characterized local Clifford operations that preserve the GHZ basis and represented their action using affine transformations of compact binary labels. This supports efficient gate updates and the optimization of noisy distillation circuits.</p>
+      <p>I then extended this approach to graph states. Bipartiteness and leaf structure constrain factorized graph-preserving operations. Organizing these operations across local-complementation orbits connects purification circuits for locally Clifford-equivalent states.</p>
+      <a href="/research/entanglement-distillation/">GHZ and graph-state distillation →</a>
+    </article>
+    <article id="sequence-control">
+      <p class="project-status">Manuscript in preparation</p>
+      <h2><a href="/research/sequence-control/">Sequence control under correlated noise</a></h2>
+      <p>A local purification step changes both the errors near its target and the correlations that influence later steps. I study how to choose the order of partial-distillation operations by identifying equivalent sequences and organizing their history-dependent costs.</p>
+      <p>To evaluate candidate sequences efficiently, I developed PairMoment. Its O(n²) state representation tracks single-vertex error probabilities and pair correlations, rather than the full graph-basis probability distribution.</p>
+      <a href="/research/sequence-control/">Partial distillation and PairMoment →</a>
+    </article>
+    <article id="synthesis">
+      <p class="project-status">Ongoing research</p>
+      <h2><a href="/research/graph-state-synthesis/">Resource-constrained graph-state synthesis</a></h2>
+      <p>Different construction plans can produce the same ideal graph state while leaving different error distributions. I am studying which distributions are reachable from a restricted library of noisy resource states and fusion operations.</p>
+      <p>My goal is to select decompositions and fusion plans according to the downstream task, including quantum-network and error-correction protocols.</p>
+      <a href="/research/graph-state-synthesis/">Shaping error distributions during synthesis →</a>
+    </article>
+  </div>
+
+  <section id="future-directions">
+    <p class="project-status">Future directions</p>
+    <h2>Quantum resource and circuit design</h2>
+    <p>I want to extend this work in two connected directions: shaping the errors in a prepared resource, and choosing an equivalent representation that lowers its physical implementation cost.</p>
+    <h3>Resource design for quantum networks and error correction</h3>
+    <p>In quantum networks, I aim to bring unequal links, finite memories, probabilistic entanglement generation, and scheduling into the resource-design problem. For error correction, I am interested in optimizing ancillary states according to the effective syndrome or logical-error model they induce.</p>
+    <h3>Local Clifford representations for syndrome extraction</h3>
+    <p>I plan to explore whether moving through locally Clifford-equivalent graph representations can reduce two-qubit-gate count, circuit depth, or routing overhead while preserving syndrome information. Minimum-edge representatives provide a starting point, but the optimization target should be the implementation cost on a particular architecture and under its noise model.</p>
+    <p>The longer-term goal is to choose the resource, its representation, and the circuit together. I want to determine when these combined choices translate into lower logical error rates or better performance for a specified communication or computation task.</p>
+  </section>
+
+  <section id="methods">
+    <h2>Methods & software</h2>
+    <p>My tools include stabilizer and Clifford methods, graph algorithms, Monte Carlo simulation, and combinatorial and numerical optimization. I develop scientific software in Julia and also work with Python, MATLAB, and Linux/HPC environments using Slurm.</p>
+    <ul>
+      <li><a href="https://github.com/Mingyuan1231/GHZ_Preserving">GHZPreserving.jl</a>: GHZ-preserving circuit simulation and optimization, with an <a href="https://doi.org/10.5281/zenodo.17470505">archived release on Zenodo</a>.</li>
+      <li><a href="https://github.com/Mingyuan1231/GraphPreserving">GraphPreserving</a>: representations and simulation of graph-preserving operations.</li>
+      <li>Gaussian quantum-optics tools: a Julia API covering beam splitters, squeezing, loss channels, and covariance-matrix transformations.</li>
+    </ul>
+  </section>
+  <p class="source">For paper records and publication status, see <a href="/publications/">Publications & manuscripts</a>. For research appointments, experimental experience, teaching, and service, see my <a href="/cv/">academic profile</a>.</p>
+</div>
