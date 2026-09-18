@@ -3,7 +3,7 @@ import { readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 const root = fileURLToPath(new URL('../dist/',import.meta.url));
-const mime = {'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.jpg':'image/jpeg','.bib':'text/plain; charset=utf-8','.xml':'application/xml','.txt':'text/plain'};
+const mime = {'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.jpg':'image/jpeg','.png':'image/png','.bib':'text/plain; charset=utf-8','.xml':'application/xml','.txt':'text/plain'};
 const port = Number(process.env.PORT || 4173);
 http.createServer(async(req,res)=>{
   try {
