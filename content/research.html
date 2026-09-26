@@ -1,6 +1,6 @@
 <div class="prose research-prose">
-  <p>I study how algebraic and graph-theoretic structure can make quantum information processing in noisy multipartite systems more efficient. My work focuses on stabilizer and graph states, where Clifford symmetries and graph structure can provide compact descriptions of otherwise large state and circuit spaces.</p>
-  <p>I use these descriptions to optimize state preparation, entanglement distillation, and circuit design under realistic noise and finite-resource constraints. A recurring question is: what information must a model retain to predict the performance of the physical task?</p>
+  <p>I study how algebraic and graph-theoretic structure can make quantum information processing in noisy multipartite and distributed systems scalable and resource efficient. My work uses stabilizer and graph states, Clifford symmetries, and compact noise models to reduce the cost of simulating and optimizing quantum protocols.</p>
+  <p>My goal is to turn these descriptions into practical tools for state preparation, entanglement processing, quantum error correction, and fault-tolerant circuit design.</p>
 
   <div class="topic-list">
     <article id="representations">
@@ -30,11 +30,13 @@
     <p class="project-status">Future directions</p>
     <h2>Quantum resource and circuit design</h2>
     <p>I want to extend this work in two connected directions: shaping the errors in a prepared resource, and choosing an equivalent representation that lowers its physical implementation cost.</p>
-    <h3>Resource design for quantum networks and error correction</h3>
-    <p>In quantum networks, I aim to bring unequal links, finite memories, probabilistic entanglement generation, and scheduling into the resource-design problem. For error correction, I am interested in optimizing ancillary states according to the effective syndrome or logical-error model they induce.</p>
-    <h3>Local Clifford representations for syndrome extraction</h3>
-    <p>I plan to explore whether moving through locally Clifford-equivalent graph representations can reduce two-qubit-gate count, circuit depth, or routing overhead while preserving syndrome information. Minimum-edge representatives provide a starting point, but the optimization target should be the implementation cost on a particular architecture and under its noise model.</p>
-    <p>The longer-term goal is to choose the resource, its representation, and the circuit together. I want to determine when these combined choices translate into lower logical error rates or better performance for a specified communication or computation task.</p>
+    <h3 id="distributed-resources">Resource design for quantum networks and error correction</h3>
+    <p>In quantum networks, I aim to bring unequal links, finite memories, probabilistic entanglement generation, and scheduling into the resource-design problem.</p>
+    <p>For distributed fault-tolerant systems, I aim to optimize how encoded or logical entanglement is generated and delivered according to the operations it must support. This connects resource preparation and purification to the requirements of distributed fault-tolerant protocols.</p>
+    <p>For error correction, I am interested in optimizing ancillary states according to the effective syndrome or logical-error model they induce.</p>
+    <h3 id="qec-co-design">Local Clifford representations and hardware-software co-design for QEC</h3>
+    <p>I plan to treat local Clifford (LC) orbits as a hardware-aware compilation space for stabilizer checks and small syndrome-extraction blocks. I would search equivalent graph realizations, compare their two-qubit gate counts, depth, routing requirements, and correlated-fault exposure, and evaluate promising candidates under circuit-level noise.</p>
+    <p>The preferred representation depends on hardware connectivity and noise, so minimum-edge structure is a starting point rather than the final objective. I aim to extend this approach to repeated syndrome extraction and modular fault-tolerant primitives, and ultimately co-design graph representatives, syndrome-extraction circuits, and hardware architectures to reduce logical error rates.</p>
   </section>
 
   <section id="methods">
