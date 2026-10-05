@@ -1,6 +1,6 @@
 # Mingyuan Wang
 
-Personal academic website: [mingyuan1231.github.io](https://mingyuan1231.github.io/).
+Personal academic website: [mingyuanwang.org](https://mingyuanwang.org/).
 
 Requires Node.js 22 or newer.
 
