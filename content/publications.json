@@ -1,5 +1,26 @@
 [
   {
+    "slug": "lc-to-css",
+    "title": "Local Clifford equivalence to CSS codes: Polynomial-time classification and conversion",
+    "authors": [
+      "Mingyuan Wang",
+      "Stefan Krastanov"
+    ],
+    "date": "2026-10-20",
+    "status": "Preprint",
+    "featured": true,
+    "arxiv": "2610.28737",
+    "primaryClass": "quant-ph",
+    "doi": "10.48550/arXiv.2610.28737",
+    "code": "https://github.com/Mingyuan1231/LCtoCSS",
+    "tag": "Quantum error correction",
+    "summary": "A deterministic polynomial-time algorithm recognizes stabilizer codes that are locally Clifford-equivalent to CSS codes and recovers their CSS checks, enabling decoder reuse while preserving code parameters and qLDPC sparsity.",
+    "overview": "CSS codes separate their stabilizer checks into pure X and pure Z operators, supporting classical decoding methods and fault-tolerant logical operations. This structure can be hidden by generator choices and single-qubit Clifford transformations. We recover it through affine linear systems, deciding LC-to-CSS equivalence and constructing the required local gates and CSS checks in O(mn² + n⁴) binary field operations for m input generators on n qubits. The conversion preserves code parameters and qLDPC sparsity. We use it to resolve open classification questions for published code constructions and, for graph states, to recognize and construct bipartite representatives within local-complementation orbits.",
+    "abstract": "Calderbank–Shor–Steane (CSS) codes support decoding and fault-tolerant logical operations through separate pure X and pure Z stabilizer checks. Generator choices and single-qubit Clifford transformations can obscure this structure. We give a deterministic polynomial-time algorithm that decides whether an arbitrary stabilizer code is locally Clifford-equivalent to a CSS code and constructs the required transformation and CSS checks whenever such a form exists. For m possibly redundant generator rows on n qubits, the algorithm uses O(mn² + n⁴) binary field operations. We reduce the problem to affine linear systems by characterizing local projectors that preserve the span of the binary stabilizer labels. The conversion preserves code parameters and check sparsity for quantum low-density parity-check (qLDPC) codes. We demonstrate CSS recovery and decoder reuse and resolve previously open LC-to-CSS classification questions for published code constructions. For graph states, LC-to-CSS equivalence corresponds to the existence of a bipartite graph in the local-complementation orbit. We derive a necessary-and-sufficient adjacency-matrix criterion for this property and construct such a graph whenever one exists. Our algorithm makes CSS decoding and fault-tolerant constructions accessible throughout the local Clifford equivalence classes of CSS codes.",
+    "related": "/research/#lc-to-css",
+    "relatedLabel": "Local Clifford equivalence and CSS quantum codes"
+  },
+  {
     "slug": "graph-state-purification",
     "title": "Efficient Graph State Purification with Factorized Graph-Preserving Operations across Local Clifford Orbits",
     "authors": [

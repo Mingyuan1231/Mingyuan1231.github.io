@@ -3,6 +3,13 @@
   <p>My goal is to turn these descriptions into practical tools for state preparation, entanglement processing, quantum error correction, and fault-tolerant circuit design.</p>
 
   <div class="topic-list">
+    <article id="lc-to-css">
+      <p class="project-status">Preprint · quantum error correction</p>
+      <h2><a href="/publications/lc-to-css/">Local Clifford equivalence to CSS codes</a></h2>
+      <p>CSS codes support decoding and fault-tolerant logical operations through separate pure X and pure Z stabilizer checks. A code can retain this useful structure even when its supplied generators mix Pauli operators. With Stefan Krastanov, I developed a deterministic polynomial-time algorithm that decides whether a stabilizer code is locally Clifford-equivalent to CSS and constructs the required single-qubit gates and CSS checks.</p>
+      <p>The conversion preserves code parameters and qLDPC sparsity, enabling reuse of CSS decoders. We apply it to resolve open classification questions for published code constructions. For graph states, the same approach gives a necessary-and-sufficient criterion for the existence of a bipartite graph in the local-complementation orbit and constructs one whenever it exists.</p>
+      <a href="/publications/lc-to-css/">Polynomial-time classification and conversion →</a>
+    </article>
     <article id="representations">
       <p class="project-status">Preprints · entanglement distillation</p>
       <h2><a href="/research/entanglement-distillation/">Compact representations for multipartite entanglement</a></h2>
@@ -43,6 +50,7 @@
     <h2>Methods & software</h2>
     <p>My tools include stabilizer and Clifford methods, graph algorithms, Monte Carlo simulation, and combinatorial and numerical optimization. I develop scientific software in Julia and also work with Python, MATLAB, and Linux/HPC environments using Slurm.</p>
     <ul>
+      <li><a href="https://github.com/Mingyuan1231/LCtoCSS.jl">LCToCSS.jl</a>: local Clifford conversion of stabilizer codes to CSS form, with a QuantumClifford.jl interface. The <a href="https://github.com/Mingyuan1231/LCtoCSS">companion Python repository</a> provides the paper's implementation and reproducibility materials.</li>
       <li><a href="https://github.com/Mingyuan1231/GHZ_Preserving">GHZPreserving.jl</a>: GHZ-preserving circuit simulation and optimization, with an <a href="https://doi.org/10.5281/zenodo.17470505">archived release on Zenodo</a>.</li>
       <li><a href="https://github.com/Mingyuan1231/GraphPreserving">GraphPreserving</a>: representations and simulation of graph-preserving operations.</li>
       <li><a href="https://github.com/qojulia/QuantumOptics.jl">Gaussian quantum-optics tools (QuantumOptics.jl)</a>: a Julia API covering beam splitters, squeezing, loss channels, and covariance-matrix transformations.</li>

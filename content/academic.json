@@ -22,6 +22,15 @@
   },
   "projects": [
     {
+      "title": "Local Clifford equivalence to CSS codes",
+      "status": "Preprint",
+      "url": "/publications/lc-to-css/",
+      "points": [
+        "Developed a deterministic polynomial-time algorithm to decide whether a stabilizer code is locally Clifford-equivalent to a CSS code and construct the local transformation and CSS checks, preserving code parameters and qLDPC sparsity.",
+        "Applied the method to open classification questions for published quantum codes and derived a necessary-and-sufficient graph-state criterion that constructs a bipartite representative whenever one exists."
+      ]
+    },
+    {
       "title": "Shaping error distributions in resource-constrained graph-state synthesis",
       "status": "Ongoing research",
       "url": "/research/graph-state-synthesis/",
