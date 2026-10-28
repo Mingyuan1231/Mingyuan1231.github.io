@@ -1,10 +1,13 @@
 import { readFile, writeFile, mkdir, cp, rm } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 import { renderCv } from './academic-pages.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const out = path.join(root, 'dist');
+const styleHash = createHash('sha256').update(await readFile(path.join(root, 'public/assets/style.css'))).digest('hex').slice(0, 12);
+const stylesheet = `/assets/style.${styleHash}.css`;
 const config = JSON.parse(await readFile(path.join(root, 'site.config.json'), 'utf8'));
 const papers = JSON.parse(await readFile(path.join(root, 'content/publications.json'), 'utf8'));
 const academic = JSON.parse(await readFile(path.join(root, 'content/academic.json'), 'utf8'));
@@ -40,7 +43,7 @@ ${origin && route !== '/404.html' ? `<link rel="canonical" href="${esc(absolute(
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="${route.startsWith('/publications/') && route !== '/publications/' ? 'article' : 'website'}">
 <meta property="og:site_name" content="Mingyuan Wang"><meta property="og:locale" content="en_US">
-<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/style.css">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="stylesheet" href="${stylesheet}">
 ${extra}<script type="application/ld+json">${json({'@context':'https://schema.org',...(schema || {'@type':'WebPage',url:absolute(route),name:title,description,about:person})})}</script>
 </head><body><a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap header-inner"><a href="/" class="brand">Mingyuan Wang<span>.</span></a><nav aria-label="Main navigation">${nav.map(([url,label])=>`<a href="${url}"${active === url ? ' aria-current="page"' : ''}>${label}</a>`).join('')}</nav></div></header>
@@ -77,6 +80,7 @@ if (path.dirname(out) !== path.resolve(root) || path.basename(out) !== 'dist') t
 await rm(out,{recursive:true,force:true});
 await mkdir(out,{recursive:true});
 await cp(path.join(root,'public'),out,{recursive:true});
+await cp(path.join(root,'public/assets/style.css'),path.join(out,stylesheet.slice(1)));
 
 await page('/', 'Mingyuan Wang | Quantum Information · UMass Amherst',
   'Mingyuan Wang, Physics PhD candidate at UMass Amherst, studies multipartite entanglement and quantum error correction for distributed quantum systems.',
