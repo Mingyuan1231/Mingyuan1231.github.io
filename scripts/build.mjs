@@ -92,7 +92,7 @@ await page('/publications/','Publications & Manuscripts | Mingyuan Wang','Public
   `${heading('Research output','Publications & manuscripts','Work in quantum information, with earlier publications in condensed-matter physics and astronomical instrumentation.')}
   <section class="section"><div class="section-head"><h2>Preprints</h2></div>${paperList(papers.filter(p => !p.journal))}</section>
   <section class="section"><div class="section-head"><h2>Journal articles</h2></div>${paperList(papers.filter(p => p.journal))}</section>
-  <section class="section"><div class="section-head"><h2>Manuscript in preparation</h2></div>${academic.manuscripts.map(p => `<article class="manuscript-entry"><h3><a href="${p.url}">${esc(p.title)}</a></h3><p class="authors">${authors(p)}</p><span class="tag">${esc(p.status)}</span><p>A study of partial-distillation sequence selection under correlated noise, using the PairMoment reduced model.</p><a href="${p.url}">Research overview →</a></article>`).join('')}</section>`);
+  <section class="section"><div class="section-head"><h2>Manuscript in preparation</h2></div>${academic.manuscripts.map(p => `<article class="manuscript-entry"><h3><a href="${p.url}">${esc(p.title)}</a></h3><p class="authors">${authors(p)}</p><span class="tag">${esc(p.status)}</span><p>I turn purification order into a practical control for suppressing correlated errors. PairMoment approximates correlated error dynamics with O(n²) moments, enabling efficient search that finds near-optimal candidate orders in exact-reference benchmarks.</p><a href="${p.url}">Research overview →</a></article>`).join('')}</section>`);
 
 for (const p of papers) {
   const route = `/publications/${p.slug}/`;
