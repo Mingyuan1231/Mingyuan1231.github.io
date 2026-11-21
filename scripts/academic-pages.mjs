@@ -13,7 +13,7 @@ export function renderCv(academic, papers, { esc, authors, paperStatus, publicat
   const sections = [
     ['profile', 'Research profile'], ['education', 'Education'],
     ['research-experience', 'Research experience'], ['publications', 'Publications'],
-    ['talks', 'Selected talks'], ['expertise', 'Technical expertise'],
+    ['talks', 'Selected presentations'], ['expertise', 'Technical expertise'],
     ['service', 'Leadership & teaching'], ['earlier-research', 'Earlier research'],
     ['contact', 'Contact'],
   ];
@@ -38,7 +38,7 @@ export function renderCv(academic, papers, { esc, authors, paperStatus, publicat
         <h3>Preprints</h3><ol class="cv-publications">${publicationEntries(papers.filter(p => !p.journal))}</ol>
         <h3>Journal articles</h3><ol class="cv-publications">${publicationEntries(papers.filter(p => p.journal))}</ol>
       </section>
-      <section id="talks"><h2>Selected research talks</h2>
+      <section id="talks"><h2>Selected research presentations</h2>
         ${academic.talks.map(talk => `<div class="cv-row"><div class="date">${esc(talk.date)}</div><div><h3>${esc(talk.title)}</h3><p>${talk.url ? `<a href="${talk.url}">${esc(talk.event)}</a>` : esc(talk.event)}<br>${esc(talk.location)}</p></div></div>`).join('')}
       </section>
       <section id="expertise"><h2>Technical expertise</h2>
