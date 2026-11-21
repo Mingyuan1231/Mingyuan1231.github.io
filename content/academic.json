@@ -121,6 +121,12 @@
       "location": "Blacksburg, VA"
     },
     {
+      "date": "October 2026",
+      "title": "Sequence Control for Partial Distillation of Graph States with Pair-Moment Propagation",
+      "event": "Center for Quantum Networks Site Visit",
+      "location": "University of Maryland, College Park, MD"
+    },
+    {
       "date": "February 2026",
       "title": "Efficient Graph State Purification with Factorized Graph-Preserving Operations across Local Clifford Orbits",
       "event": "Center for Quantum Networks Annual All-Center Retreat",
