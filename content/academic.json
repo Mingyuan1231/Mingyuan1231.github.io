@@ -115,20 +115,26 @@
   ],
   "talks": [
     {
+      "date": "November 2026",
+      "title": "Structure and Control in Quantum States and Codes",
+      "event": "Invited talk, Virginia Tech",
+      "location": "Blacksburg, VA"
+    },
+    {
       "date": "February 2026",
       "title": "Efficient Graph State Purification with Factorized Graph-Preserving Operations across Local Clifford Orbits",
       "event": "Center for Quantum Networks Annual All-Center Retreat",
       "location": "Amherst, MA"
     },
     {
-      "date": "June 2, 2025",
+      "date": "June 2025",
       "title": "From GHZ to Graph states: A Group-Based Approach to Entanglement Preservation",
       "event": "Quantum Networking Workshop: Modeling, Applications, Design",
       "location": "UMass Amherst",
       "url": "https://www.umass.edu/quantum/2025-quantumsavory-workshop/"
     },
     {
-      "date": "March 18, 2025",
+      "date": "March 2025",
       "title": "GHZ-preserving Gates and Optimized Purification Circuits",
       "event": "APS Global Physics Summit / March Meeting",
       "location": "Anaheim, CA",
